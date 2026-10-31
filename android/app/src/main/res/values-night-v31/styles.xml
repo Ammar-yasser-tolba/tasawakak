@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The app keeps its light identity even when the system uses dark mode. -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowSplashScreenBackground">@color/brand_canvas</item>
+        <!-- 288dp canvas with the mark inside the 192dp safe circle, matching the
+             in-app splash size (158dp) so the handoff never shows an empty frame. -->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/android12_splash_icon</item>
+        <item name="android:windowBackground">@color/brand_canvas</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/brand_canvas</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowBackground">@color/brand_canvas</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/brand_canvas</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>
